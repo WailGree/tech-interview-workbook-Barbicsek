@@ -584,9 +584,65 @@ a[target=_blank] {
 ### Javascript
 
 #### What is javascript?
+
+*JavaScript was initially created to “make web pages alive”.*
+
+*The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.*
+
+*Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.*
+
+*In this aspect, JavaScript is very different from another language called Java.*
+
+*For instance, in-browser JavaScript is able to:*
+
+- *Add new HTML to the page, change the existing content, modify styles.*
+- *React to user actions, run on mouse clicks, pointer movements, key presses.*
+- *Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).*
+- *Get and set cookies, ask questions to the visitor, show messages.*
+- *Remember the data on the client-side (“local storage”).*
+
+
 #### When to use AJAX? Bring examples of its usage.
+
+*AJAX = Asynchronous JavaScript And XML.*
+
+*AJAX is not a programming language. AJAX just uses a combination of:*
+
+- *A browser built-in XMLHttpRequest object (to request data from a web server)*
+- *JavaScript and HTML DOM (to display or use the data)*
+
+*AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.*
+
 #### What is DOM and how to manipulate it from Javascript?
+
+*DOM - Document Object Model DOM is representative displaying for the according html document, and those objects can be modified.<br>*
+  - *Creating, removing or replacing an element*
+  - *Modifying an element's text and/or HTML content*
+  - *Getting an element content and working with it*
+
+```Javascript
+let element = document.querySelector('selector')
+```
+/* You can use it to get the element from the DOM and save
+it as a variable, and manipulate it.  */
+
 #### What are events and how/why to use them in Javascript?
+
+*JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.*
+
+*When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.*
+
+*Developers can use these events to execute JavaScript coded responses, which cause buttons to close windows, messages to be displayed to users, data to be validated, and virtually any other type of response imaginable.*
+
+*Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.*
+
+```Javascript
+let btn = document.querySelector('button');
+btn.addEventListener('click',function(event) {
+  }
+);
+```
+
 #### What is event bubbling/capturing? How would you use it?
 #### What is JSON and how do we use it?
 
