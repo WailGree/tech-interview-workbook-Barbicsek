@@ -347,24 +347,76 @@ def divide(a, b):
 #### How can you connect your application to a database server? What are the possible ways?
 #### When do you use the DISTINCT keyword in SQL?
 
-*The SELECT DISTINCT statement is used to return only distinct (different) values.
+*The SELECT DISTINCT statement is used to return only distinct (different) values.*
 
-Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.*
+*Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.*
 
 #### Talk about the behavior/goal of these base SQL clauses: WHERE, GROUP BY, HAVING, ORDER BY?
 
-- *WHERE* <br>
+- *WHERE:* <br>
   *The WHERE clause is used to filter records.  The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement.*<br>
-- *GROUP BY* <br>
+- *GROUP BY:* <br>
   *The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country.The GROUP BY statement is      often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.*
-- *HAVING* <br>
+- *HAVING:* <br>
   *A HAVING clause in SQL specifies that an SQL SELECT statement should only return rows where aggregate values meet the specified conditions. It was added to the    SQL language because the WHERE keyword could not be used with aggregate functions.*
-- *ORDER BY* <br>
+- *ORDER BY:* <br>
   *The ORDER BY keyword is used to sort the result-set in ascending or descending order.The ORDER BY keyword sorts the records in ascending order by default. To      sort the records in descending order, use the DESC keyword.*
   
 #### What are aggregate functions in SQL? Give 3 examples.
+
+*In database management an aggregate function is a function where the values of multiple rows are grouped together as input on certain criteria to form a single value of more significant meaning.*
+
+1) *Count()*
+2) *Sum()*
+3) *Avg()*
+
 #### What kind of JOIN types do you know in SQL? Could you give examples?
+
+*Here are the different types of the JOINs in SQL:*
+
+- *(INNER) JOIN: Returns records that have matching values in both tables*
+    ``` 
+    SELECT Employee.EmpID, Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
+    FROM Employee
+    INNER JOIN Projects 
+    ON Employee.EmpID=Projects.EmpID;
+    ```  
+- *LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table*
+     ``` 
+    SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
+    FROM Employee
+    LEFT JOIN
+    ON Employee.EmpID = Projects.EmpID ;
+     ``` 
+- *RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table*
+    ``` 
+    SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
+    FROM Employee
+    RIGHT JOIN
+    ON Employee.EmpID = Projects.EmpID;
+    ``` 
+- *FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table*
+    ``` 
+    SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID
+    FROM Employee
+    FULL JOIN Projects
+    ON Employee.EmpID = Projects.EmpID;
+    ``` 
+    
 #### What are the constraints in sql?
+
+*SQL constraints are used to specify rules for data in a table.Constraints can be specified when the table is created with the CREATE TABLE statement, or after the table is created with the ALTER TABLE statement.*
+
+*The following constraints are commonly used in SQL:*
+
+- *NOT NULL - Ensures that a column cannot have a NULL value*
+- *UNIQUE - Ensures that all values in a column are different*
+- *PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table*
+- *FOREIGN KEY - Uniquely identifies a row/record in another table*
+- *CHECK - Ensures that all values in a column satisfies a specific condition*
+- *DEFAULT - Sets a default value for a column when no value is specified*
+- *INDEX - Used to create and retrieve data from the database very quickly*
+
 #### What is a cursor in SQL? Why would you use one?
 #### What are database indexes? When to use?
 #### What are database transactions? When to use?
