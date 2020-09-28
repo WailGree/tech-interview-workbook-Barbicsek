@@ -155,8 +155,8 @@ Ideal for sending secure messages.*
 - *If there is no match, the default code block is executed.*
 
 #### How to achieve a switch-case-like structure in Python?
-
-*def week(i):
+```Python
+def week(i):
         switcher={
                 0:'Sunday',
                 1:'Monday',
@@ -166,7 +166,8 @@ Ideal for sending secure messages.*
                 5:'Friday',
                 6:'Saturday'
              }
-         return switcher.get(i,"Invalid day of week")*
+         return switcher.get(i,"Invalid day of week")
+```
 
 #### Explain variable scoping in Python!
 
@@ -185,11 +186,12 @@ Ideal for sending secure messages.*
 
 #### How the list comprehension looks like in Python?
 
-*h_letters = [ letter for letter in 'human' ] <br>
+```h_letters = [ letter for letter in 'human' ] <br>
 print( h_letters) <br>
 When we run the program, the output will be: <br>
 
-['h', 'u', 'm', 'a', 'n']*
+['h', 'u', 'm', 'a', 'n']
+```
 
 
 #### How the “ternary expression” looks like in Python?
