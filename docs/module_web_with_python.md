@@ -156,7 +156,7 @@ Ideal for sending secure messages.*
 
 #### How to achieve a switch-case-like structure in Python?
 
->>> def week(i):
+*def week(i):
         switcher={
                 0:'Sunday',
                 1:'Monday',
@@ -166,7 +166,7 @@ Ideal for sending secure messages.*
                 5:'Friday',
                 6:'Saturday'
              }
-         return switcher.get(i,"Invalid day of week")
+         return switcher.get(i,"Invalid day of week")*
 
 #### Explain variable scoping in Python!
 
@@ -185,20 +185,20 @@ Ideal for sending secure messages.*
 
 #### How the list comprehension looks like in Python?
 
-*h_letters = [ letter for letter in 'human' ]*
-*print( h_letters)*
-*When we run the program, the output will be:*
+*h_letters = [ letter for letter in 'human' ] <br>
+print( h_letters) <br>
+When we run the program, the output will be: <br>
 
-*['h', 'u', 'm', 'a', 'n']*
+['h', 'u', 'm', 'a', 'n']*
 
 
 #### How the “ternary expression” looks like in Python?
 
-*<expression1> if <condition> else <expression2>*
+'<expression1> if <condition> else <expression2>' <br>
   
-1. *This example will print whether a number is odd or even.*
-    *n = 5*
-    *print("Even") if n % 2 == 0 else print("Odd")*
+1. *This example will print whether a number is odd or even.<br>
+    n = 5 <br>
+    print("Even") if n % 2 == 0 else print("Odd")*
 
 #### How the ternary expression looks like in JavaScript?
 
