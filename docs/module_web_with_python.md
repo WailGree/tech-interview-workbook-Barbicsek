@@ -41,7 +41,7 @@
 
 #### What is XSS? How to protect an application against it?
 
-*Cross-site scripting (also known as XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other. *
+*Cross-site scripting (also known as XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other.*
 
 *In general, effectively preventing XSS vulnerabilities is likely to involve a combination of the following measures:*
 - *Filter input on arrival.*
