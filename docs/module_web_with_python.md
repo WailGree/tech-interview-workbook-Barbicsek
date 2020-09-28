@@ -14,22 +14,85 @@
   
 #### What layers can you name in a simple web application?
 
+  - *View*
+  - *Application service*
+  - *Database*
+  - *Domain*
+
 ### Error handling
 #### What error can occur, when an array does not have an element on the requested index?
+
+*IndexError*
+
 #### What is the “finally” block, and how would you use it?
+
+*The finally-block contains statements to execute after the try-block and catch-block(s) execute, but before the statements following the try...catch...finally-block. The finally-block executes regardless of whether an exception is thrown. Also, if an exception is thrown, the statements in the finally-block execute even if no catch-block handles the exception.*
+
 #### Why should we catch special exception types?
+
+*Exception handling is important because it helps maintain the normal, desired flow of the program even when unexpected events occur. If exceptions are not handled, programs may crash or requests may fail.*
 
 ### Security
 #### What is SQL injection? How to protect an application against it?
+
+*SQL injection is a type of injection attack. Injection attacks occur when maliciously crafted inputs are submitted by an attacker, causing an application to perform an unintended action. Because of the ubiquity of SQL databases, SQL injection is one of the most common types of attack on the internet.*
+
+*Developers can prevent SQL Injection vulnerabilities in web applications by utilizing parameterized database queries with bound, typed parameters and careful use of parameterized stored procedures in the database.*
+
 #### What is XSS? How to protect an application against it?
+
+*Cross-site scripting (also known as XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other. *
+
+*In general, effectively preventing XSS vulnerabilities is likely to involve a combination of the following measures:*
+- *Filter input on arrival.*
+- *Encode data on output.*
+- *Use appropriate response headers.*
+- *Content Security Policy.*
+
 #### How to properly store passwords?
+
+*You have to hash them and then store the outcome in a database.*
+
 #### What is HTTPS?
+
+*Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer.* 
+
 #### What is encryption and decryption?
+
+*Encryption is the process of converting normal message (plaintext) into meaningless message (Ciphertext).*
+
+*Decryption is the process of converting meaningless message (Ciphertext) into its original form (Plaintext).*
+
 #### What is hashing?
+
+*Hashing is the process of converting a given key into another value. A hash function is used to generate the new value according to a mathematical algorithm. The result of a hash function is known as a hash value or simply, a hash.*
+
 #### What is the difference between encryption and hashing? When would you use which?
+
+*Encryption is a two-way function; what is encrypted can be decrypted with the proper key. Hashing, however, is a one-way function that scrambles plain text to produce a unique message digest. With a properly designed algorithm, there is no way to reverse the hashing process to reveal the original password.*
+
+*Hashing:<br>
+Ideal way to store passwords, as hashes are inherently one-way in their nature.(+ salt)*
+
+*Encryption:<br>
+Ideal for sending secure messages.*
+
 #### What encryption methods do you know?
+
+*The 4 common encryption methods:*
+
+1. *Advanced Encryption Standard (AES)*
+2. *Rivest-Shamir-Adleman (RSA)*
+3. *Triple Data Encryption Standard (TripleDES)*
+4. *Twofish*
+
 #### What hashing methods do you know?
+
+*Secure Hash Algorithm (SHA)*
+
 #### How/where would you store sensitive data (like db password, API key, ...) of your application?
+
+*The best would be to have a separate file with secrets encrypted. This file should be stored on some area which is not accessible by the application server.*
 
 ## Computer science
 
