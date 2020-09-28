@@ -346,7 +346,22 @@ def divide(a, b):
 
 #### How can you connect your application to a database server? What are the possible ways?
 #### When do you use the DISTINCT keyword in SQL?
+
+*The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.*
+
 #### Talk about the behavior/goal of these base SQL clauses: WHERE, GROUP BY, HAVING, ORDER BY?
+
+- *WHERE* <br>
+  *The WHERE clause is used to filter records.  The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement.*<br>
+- *GROUP BY* <br>
+  *The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country.The GROUP BY statement is      often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.*
+- *HAVING* <br>
+  *A HAVING clause in SQL specifies that an SQL SELECT statement should only return rows where aggregate values meet the specified conditions. It was added to the    SQL language because the WHERE keyword could not be used with aggregate functions.*
+- *ORDER BY* <br>
+  *The ORDER BY keyword is used to sort the result-set in ascending or descending order.The ORDER BY keyword sorts the records in ascending order by default. To      sort the records in descending order, use the DESC keyword.*
+  
 #### What are aggregate functions in SQL? Give 3 examples.
 #### What kind of JOIN types do you know in SQL? Could you give examples?
 #### What are the constraints in sql?
