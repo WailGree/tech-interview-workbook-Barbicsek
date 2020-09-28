@@ -99,11 +99,42 @@ Ideal for sending secure messages.*
 ### Algorithms
 
 #### What is the difference between Stack and Queue data structure?
+
+| *STACKS* | *QUEUES* |
+|:-:|:-:|
+| *Stacks are based on the LIFO( Last in First out) principle, i.e., the element inserted at the last, is the first element to come out of the list.* | *Queues are based on the FIFO (First in First out) principle, i.e., the element inserted at the first, is the first element to come out of the list.* |
+| *Insert operation is called push operation.* | *Insert operation is called enqueue operation.* |
+| *Delete operation is called pop operation.* | *Delete operation is called dequeue operation.* |
+| *In stacks we maintain only one pointer to access the list, called the top (last element).* | *In queues we maintain two pointers to access the list (first/last position).* |
+
 #### What is BubbleSort? Describe the main logic of this sorting algorithm.
+
+*Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an array with n number of elements. Bubble Sort compares all the element one by one and sort them based on their values.*
+
+*Following are the steps involved in bubble sort(for sorting a given array in ascending order):*
+1. *Starting with the first element(index = 0), compare the current element with the next element of the array.*
+2. *If the current element is greater than the next element of the array, swap them.*
+3. *If the current element is less than the next element, move to the next element. Repeat Step 1.*
+
 #### Explain the process of finding the maximum and minimum value in a list of numbers!
+
+*Moving along the collection (iterate). Set the first as highest/lowest. Then comparing each next element with the firts and replace it with the first accordingly.*
+
 #### Explain the process of calculating the average value in an array of numbers!
+
+*Adding each element value together and dividing it with the the total element count.*
+
 #### What is Big O complexity? Explain time and space complexity!
+
+*Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.*
+
+*The time complexity of an algorithm is the amount of time taken by the algorithm to complete its process as a function of its input length, n. The time complexity of an algorithm is commonly expressed using asymptotic notations.*
+
+*The space complexity of an algorithm is the amount of space (or memory) taken by the algorithm to run as a function of its input length, n. Space complexity includes both auxiliary space and space used by the input.*
+
 #### Explain the process of calculating the average value in a list of numbers!
+
+*Sum all of the data values and divide by the number of nodes in the list.*
 
 ### Procedural
 #### How the CASE condition works in SQL?
