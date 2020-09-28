@@ -138,15 +138,93 @@ Ideal for sending secure messages.*
 
 ### Procedural
 #### How the CASE condition works in SQL?
+
+*The CASE statement goes through conditions and returns a value when the first condition is met (like an IF-THEN-ELSE statement). So, once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the ELSE clause.*
+
+*If there is no ELSE part and no conditions are true, it returns NULL.*
+
 #### How the switch-case condition works in JavaScript?
+
+*The switch statement is used to perform different actions based on different conditions.*
+
+*This is how it works:*
+
+- *The switch expression is evaluated once.*
+- *The value of the expression is compared with the values of each case.*
+- *If there is a match, the associated block of code is executed.*
+- *If there is no match, the default code block is executed.*
+
 #### How to achieve a switch-case-like structure in Python?
+
+>>> def week(i):
+        switcher={
+                0:'Sunday',
+                1:'Monday',
+                2:'Tuesday',
+                3:'Wednesday',
+                4:'Thursday',
+                5:'Friday',
+                6:'Saturday'
+             }
+         return switcher.get(i,"Invalid day of week")
+
 #### Explain variable scoping in Python!
+
+*Scope resolution via LEGB rule:*
+*In Python, the LEGB rule is used to decide the order in which the namespaces are to be searched for scope resolution.*
+*The scopes are listed below in terms of hierarchy(highest to lowest/narrowest to broadest):*
+
+*Local(L): Defined inside function/class*
+*Enclosed(E): Defined inside enclosing functions(Nested function concept)*
+*Global(G): Defined at the uppermost level*
+*Built-in(B): Reserved names in Python builtin modules*
+
 #### What’s the difference between const and var in JavaScript?
+
+*Var variables can be updated and re-declared within its scope; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope. But while var variables are initialized with undefined ,const variables are not initialized.*
+
 #### How the list comprehension looks like in Python?
+
+*h_letters = [ letter for letter in 'human' ]*
+*print( h_letters)*
+*When we run the program, the output will be:*
+
+*['h', 'u', 'm', 'a', 'n']*
+
+
 #### How the “ternary expression” looks like in Python?
+
+*<expression1> if <condition> else <expression2>*
+  
+1. *This example will print whether a number is odd or even.*
+    *n = 5*
+    *print("Even") if n % 2 == 0 else print("Odd")*
+
 #### How the ternary expression looks like in JavaScript?
+
+*with if/else:*
+```Javascript
+if (person.age >= 16) {
+  person.driver = 'Yes';
+} else {
+  person.driver = 'No';
+}
+with tenary expression:
+person.driver = person.age >=16 ? 'Yes' : 'No';
+```
 #### How to import a function from another module in Python?
+
+```Python
+from a import b, c
+```
+
 #### How to import a function from another module in JavaScript?
+
+```Javascript
+import "my-module.js";
+    import myModule from "my-module.js";
+    import {reallyReallyLongModuleMemberName as shortName} from "my-module.js";
+```
 
 ### Functional
 #### What is recursion?
