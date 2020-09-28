@@ -185,8 +185,8 @@ def week(i):
 *Var variables can be updated and re-declared within its scope; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope. But while var variables are initialized with undefined ,const variables are not initialized.*
 
 #### How the list comprehension looks like in Python?
-
-```h_letters = [ letter for letter in 'human' ]
+```Python
+h_letters = [ letter for letter in 'human' ]
 print( h_letters) <br>
 When we run the program, the output will be: <br>
 
