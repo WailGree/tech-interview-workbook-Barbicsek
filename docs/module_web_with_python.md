@@ -469,17 +469,117 @@ WHERE city = 'Miskolc';
 ### HTML & CSS
 
 #### What’s the difference between XML, XHTML and HTML?
+
+- *HTML:* 
+
+  * HTML is the HyperText Markup Language, which is designed to create structured documents and provide for semantic meaning behind the documents.*
+
+- *XML:*
+
+  * XML is the Extensible Markup Language, which provides rules for creating, structuring, and encoding documents. It's programming language-agnostic - all of the    major programming languages provide mechanisms for reading and writing XML documents, either as part of the core or in external libraries.*
+
+- *XHTML:*
+
+  *XHTML is an XML-based HTML. It serves the same function as HTML, but with the same rules as XML documents. These rules deal with the structure of the markup.*
+
 #### How to include a JavaScript file in a webpage?
+
+*Using the script tag in .html file:*
+```HTML
+<script type="text/javascript" src="path-to-javascript-file.js"></script>
+```
 #### How to include a CSS file in a webpage?
+
+*Using the link tag in .html file:*
+```HTML
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+```
+
 #### How to select an element using its id in CSS?
+
+*You have to use the hashtag(#) + the element id name:***
+```CSS
+#elementIdName {
+    /*code;*/
+}
+```
+
 #### How to select elements using their class in CSS?
+
+*You have to use the dot(.) + the element class name:*
+```CSS
+.elementClassName {
+    /*code;*/
+}
+```
 #### How to select elements which have the ‘alpha’ and ‘beta’ classes in CSS?
+
+*You have to define in css file with dot classname dot classname:*
+```CSS
+.alpha.beta{color:yellow;}
+/*here you can reach the beta class*/
+```
 #### How to select all list items in all ordered lists on the page in CSS?
+
+*You can reach by using the ordered tag which is < ol >:*
+```CSS
+ol {
+ /*code;*/
+}
+```
 #### How to select elements using their attributes in CSS?
+
+*The [attribute=value] selector is used to select elements with the specified attribute and value.*
+```CSS
+a[target=_blank] {
+  background-color: yellow;
+}
+```
+
 #### What are UX and UI?
+
+- *UI(User Interface Design):*
+
+  *Simply put, user interface (UI) is anything a user may interact with to use a digital product or service. This includes everything from screens and                touchscreens, keyboards, sounds, and even lights. To understand the evolution of UI, however, it’s helpful to learn a bit more about its history and how it has   evolved into best practices and a profession.*
+  
+- *UX(User Experience Design):*
+
+  *User experience, or UX, evolved as a result of the improvements to UI. Once there was something for users to interact with, their experience, whether positive,   negative, or neutral, changed how users felt about those interactions.*
+
 #### Please list some points that an application should fulfill to have good UX.
+
+  - *Meet the users' needs*
+  - *Have a clear hierarchy*
+  - *Consistency*
+  - *Understand accessibility*
+  - *Usability*
+
 #### What is XML, XSLT, DTD?
+
+- *XML:*
+
+  *XML is a software- and hardware-independent tool for storing and transporting data.*
+
+- *XSLT:*
+
+  *XSLT (eXtensible Stylesheet Language Transformations) is the recommended style sheet language for XML.With XSLT you can transform an XML document into HTML.*
+  
+- *DTD:*
+
+  *A DTD is a Document Type Definition.A DTD defines the structure and the legal elements and attributes of an XML document.*
+  
 #### What is the difference between HTML and XML?
+
+*KEY DIFFERENCE:*
+
+- *XML is abbreviation for eXtensible Markup Language whereas HTML stands for Hypertext Markup Language.*
+- *XML mainly focuses on transfer of data while HTML is focused on presentation of the data.*
+- *XML is content driven‭‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬ whereas HTML is format driven‭‬‬‬‬‬‬‬.*
+- *XML is Case sensitive while HTML is Case insensitive.*
+- *XML provides namespaces support while HTML doesn't provide namespaces support.*
+- *XML is strict for closing tag while HTML is not strict.*
+- *XML tags are extensible whereas HTML has limited tags.*
+- *XML tags are not predefined whereas HTML has predefined tags.*
 
 ### Javascript
 
