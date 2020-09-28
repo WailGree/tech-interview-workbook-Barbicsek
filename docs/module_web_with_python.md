@@ -449,11 +449,11 @@ This temporary work area is used to store the data retrieved from the database, 
   
 - *Many-to-Many:*
 
-  *In a many-to-many relationship, a row in table A can have many matching rows in table B, and vice versa. <br>
+  *In a many-to-many relationship, a row in table A can have many matching rows in table B, and vice versa*
 
-  A many-to-many relationship could be thought of as two one-to-many relationships, linked by an intermediary table. <br>
+  *A many-to-many relationship could be thought of as two one-to-many relationships, linked by an intermediary table.*
 
-  The intermediary table is typically referred to as a “junction table” (also as a “cross-reference table”). This table is used to link the other two tables together. It does this by having two fields that reference the primary key of each of the other two tables.*
+  *The intermediary table is typically referred to as a “junction table” (also as a “cross-reference table”). This table is used to link the other two tables       together. It does this by having two fields that reference the primary key of each of the other two tables.*
 
 #### You have a table with an “address” field which contains data like “3525, Miskolc, Régiposta 9.” (postcode, city, street name and address). How would you query all records related to Miskolc?
 
