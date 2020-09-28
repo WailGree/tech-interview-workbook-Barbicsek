@@ -195,13 +195,14 @@ When we run the program, the output will be: <br>
 
 
 #### How the “ternary expression” looks like in Python?
-
-``` <expression1> if <condition> else <expression2>
+```Python
+<expression1> if <condition> else <expression2>
   
-1. This example will print whether a number is odd or even.<br>
+This example will print whether a number is odd or even:
     n = 5 <br>
     print("Even") if n % 2 == 0 else print("Odd")
 ```
+
 
 #### How the ternary expression looks like in JavaScript?
 
