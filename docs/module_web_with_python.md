@@ -354,12 +354,16 @@ def divide(a, b):
 #### Talk about the behavior/goal of these base SQL clauses: WHERE, GROUP BY, HAVING, ORDER BY?
 
 - *WHERE:* <br>
+
   *The WHERE clause is used to filter records.  The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement.*<br>
 - *GROUP BY:* <br>
+
   *The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country.The GROUP BY statement is      often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.*
 - *HAVING:* <br>
+
   *A HAVING clause in SQL specifies that an SQL SELECT statement should only return rows where aggregate values meet the specified conditions. It was added to the    SQL language because the WHERE keyword could not be used with aggregate functions.*
 - *ORDER BY:* <br>
+
   *The ORDER BY keyword is used to sort the result-set in ascending or descending order.The ORDER BY keyword sorts the records in ascending order by default. To      sort the records in descending order, use the DESC keyword.*
   
 #### What are aggregate functions in SQL? Give 3 examples.
@@ -418,11 +422,49 @@ def divide(a, b):
 - *INDEX - Used to create and retrieve data from the database very quickly*
 
 #### What is a cursor in SQL? Why would you use one?
+
+*A cursor is a temporary work area created in the system memory when a SQL statement is executed.<br> 
+A cursor contains information on a select statement and the rows of data accessed by it.<br>
+This temporary work area is used to store the data retrieved from the database, and manipulate this data. A cursor can hold more than one row, but can process only one row at a time. The set of rows the cursor holds is called the active set.*
+
 #### What are database indexes? When to use?
+
+*A database index allows a query to efficiently retrieve data from a database.  Indexes are related to specific tables and consist of one or more keys.  A table can have more than one index built from it.  The keys are a fancy term for the values we want to look up in the index.  The keys are based on the tables’ columns.  By comparing keys to the index it is possible to find one or more database records with the same value.*
+
 #### What are database transactions? When to use?
+
+*A database transaction symbolizes a unit of work performed within a database management system (or similar system) against a database, and treated in a coherent and reliable way independent of other transactions. A transaction generally represents any change in a database.*
+
 #### What kind of database relations do you know? How to define them?
+
+*There are 3 types of relationships in relational database design. They are:*
+
+- *One-to-One:*
+
+  *This is not a common relationship type, as the data stored in table B could just have easily been stored in table A. However, there are some valid reasons for   using this relationship type. A one-to-one relationship  can be used for security purposes, to divide a large table, and various other specific purposes.*
+  
+- *One-to-Many (or Many-to-One):*
+
+  *This is the most common relationship type. In this type of relationship, a row in table A can have many matching rows in table B, but a row in table B can have    only one matching row in table A.*
+  
+- *Many-to-Many:*
+
+  *In a many-to-many relationship, a row in table A can have many matching rows in table B, and vice versa. <br>
+
+  A many-to-many relationship could be thought of as two one-to-many relationships, linked by an intermediary table. <br>
+
+  The intermediary table is typically referred to as a “junction table” (also as a “cross-reference table”). This table is used to link the other two tables together. It does this by having two fields that reference the primary key of each of the other two tables.*
+
 #### You have a table with an “address” field which contains data like “3525, Miskolc, Régiposta 9.” (postcode, city, street name and address). How would you query all records related to Miskolc?
+
+```SQL
+SELECT * FROM table
+WHERE city = 'Miskolc';
+```
+
 #### How would you keep track of what kind of data has changed after an UPDATE or DELETE operation in a table?
+
+*I would create a person_log table and create a trigger on that will insert a row into person_log table whenever the table/s row/s get updated/deletes/added.*
 
 ### HTML & CSS
 
