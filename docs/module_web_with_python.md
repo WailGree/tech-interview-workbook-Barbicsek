@@ -188,7 +188,7 @@ def week(i):
 ```Python
 h_letters = [ letter for letter in 'human' ]
 print( h_letters)
-When we run the program, the output will be: 
+*When we run the program, the output will be:* 
 
 ['h', 'u', 'm', 'a', 'n']
 ```
@@ -198,7 +198,7 @@ When we run the program, the output will be:
 ```Python
 <expression1> if <condition> else <expression2>
   
-This example will print whether a number is odd or even:
+*This example will print whether a number is odd or even:*
     n = 5 <br>
     print("Even") if n % 2 == 0 else print("Odd")
 ```
