@@ -187,8 +187,8 @@ def week(i):
 #### How the list comprehension looks like in Python?
 ```Python
 h_letters = [ letter for letter in 'human' ]
-print( h_letters) <br>
-When we run the program, the output will be: <br>
+print( h_letters)
+When we run the program, the output will be: 
 
 ['h', 'u', 'm', 'a', 'n']
 ```
