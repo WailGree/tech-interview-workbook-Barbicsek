@@ -716,15 +716,75 @@ the
 ### DevOps
 
 #### Why is it good to use a package manager software?
+
+*A package manager is a programming language’s tool to create project environments and easily import external dependencies.*
+
 #### Why is it good to use a virtual environment for a project?
+
+*A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Every project can have a single unique virtual environment with the specific packages.*
 
 ### Networks
 
 #### What kind of HTTP status codes do you know?
+
+  - *200 OK*
+  - *302 Found*
+  - *400 Bad Request*
+  - *404 Not Found*
+  - *405 Method Not Allowed*
+  - *408 Request Timeout*
+  - *500 Internal Server Error*
+  
 #### What is a API?
+
+*It means: Application Programming Interface.*
+
+*Set of callable things, in most general.*
+
+*Used frequently in Web context (but not just there)*
+
+*Means for outside world to use our program.*
+
+*In web context: The "callable things" are HTTP endpoints.*
+
 #### What is REST API?
+
+*A way / discipline to arrange / design HTTP endpoints.*
+
+*Type of resource access depends on the HTTP method (`GET` reads the
+resource, `DELETE` removes the resource) (CRUD operations).*
+
+*Statelessness: The response only depends on the contents of the
+request (no memory about earlier requests).*
+
+*Response contents are client-agnostic, easily parsable.*
+
 #### What is JSON? When to use?
+
+*JSON stands for JavaScript Object Notation. This is a lightweight format for storing and transporting data.*
+
+*JSON is often used when data is sent from a server to a web page.*
+
 #### What is TCP/IP? What layers does it define, what are they responsible for?
+
+*TCP/IP, or the Transmission Control Protocol/Internet Protocol, is a suite of communication protocols used to interconnect network devices on the internet.*
+
+*TCP/IP model layers:*
+
+- *Network Access Layer:*
+  *This layer corresponds to the combination of Data Link Layer and Physical Layer of the OSI model. It looks out for hardware addressing and the protocols         present in this layer allows for the physical transmission of data.*
+  
+- *Internet Layer:*
+
+  *This layer parallels the functions of OSI’s Network layer. It defines the protocols which are responsible for logical transmission of data over the entire        network.*
+  
+ - *Host-to-Host Layer:*
+  *This layer is analogous to the transport layer of the OSI model. It is responsible for end-to-end communication and error-free delivery of data. It shields the    upper-layer applications from the complexities of data.*
+  
+  - *Application Layer:*
+    *This layer performs the functions of top three layers of the OSI model: Application, Presentation and Session Layer. It is responsible for node-to-node          communication and controls user-interface specifications.*
+
+
 #### What’s the difference between TCP and UDP?
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
 #### How does an HTTP Response look like? What are the most relevant HTTP header fields?
