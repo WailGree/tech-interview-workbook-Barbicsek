@@ -644,6 +644,28 @@ btn.addEventListener('click',function(event) {
 ```
 
 #### What is event bubbling/capturing? How would you use it?
+
+*Bubbling and capturing are the 2 models that DOM events use to propagate.*
+
+*Here is a DOM structure:*
+
+```Python
+
+<div id="container">
+  <button>Click me</button>
+</div>
+```
+
+*You want to track when users click on the button, and you have 2 event listeners, one on button, and one on #container.*
+
+*Click on a child element will always propagate to its parents, unless you stop the propagation (see later).*
+
+*Those event listeners will be called in order, and this order is determined by the event bubbling/capturing model used.*
+
+*Bubbling means that the event propagates from the item that was clicked (the child) up to all its parent tree, starting from the nearest one.*
+
+*In this example, the handler on button will fire before the #container handler.*
+
 #### What is JSON and how do we use it?
 
 ## Software engineering
