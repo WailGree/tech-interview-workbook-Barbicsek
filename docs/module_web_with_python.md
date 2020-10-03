@@ -472,11 +472,11 @@ WHERE city = 'Miskolc';
 
 - *HTML:* 
 
-  * HTML is the HyperText Markup Language, which is designed to create structured documents and provide for semantic meaning behind the documents.*
+  *HTML is the HyperText Markup Language, which is designed to create structured documents and provide for semantic meaning behind the documents*
 
 - *XML:*
 
-  * XML is the Extensible Markup Language, which provides rules for creating, structuring, and encoding documents. It's programming language-agnostic - all of the    major programming languages provide mechanisms for reading and writing XML documents, either as part of the core or in external libraries.*
+  *XML is the Extensible Markup Language, which provides rules for creating, structuring, and encoding documents. It's programming language-agnostic - all of the    major programming languages provide mechanisms for reading and writing XML documents, either as part of the core or in external libraries.*
 
 - *XHTML:*
 
@@ -786,13 +786,40 @@ request (no memory about earlier requests).*
 
 
 #### What’s the difference between TCP and UDP?
+
+*TCP (Transmission Control Protocol) is connection oriented, whereas UDP (User Datagram Protocol) is connection-less.<br>
+
+| **TCP** | **UDP** |
+|:-:|:-:|
+| *Reliable* | *Unreliable* |
+| *Connection-oriented* | *Connectionless* |
+| *Segment retransmission and flow control through windowing* | *No windowing or retransmission* |
+| *Segment sequencing* | *No sequencing* |
+| *Acknowledge sequencing* | *No acknowledgment* |
+
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
 #### How does an HTTP Response look like? What are the most relevant HTTP header fields?
 #### What is DNS? How does it work?
+
+*Domain Name Servers (DNS) are the Internet's equivalent of a phone book. They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses.*
+
 #### What is a web server?
+
+*A web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond.*
+
 #### Explain the client-server architecture.
+
+*Client-server architecture, architecture of a computer network in which many clients (remote processors) request and receive service from a centralized server.*
+
+*Client computers provide an interface to allow a computer user to request services of the server and to display the results the server returns.*
+
 #### What would you use a session for?
+
+*Sessions are a simple way to store data for individual users against a unique session ID. This can be used to persist state information between page requests.*
+
 #### What would you use a cookie for?
+
+*A cookie (called an Internet or Web cookie) is the term given to describe a type of message that is given to a web browser by a web server. The main purpose of a cookie is to identify users and possibly prepare customized Web pages or to save site login information for you.*
 
 ## Software Development Methodologies
 
