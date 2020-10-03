@@ -668,16 +668,50 @@ btn.addEventListener('click',function(event) {
 
 #### What is JSON and how do we use it?
 
+*JSON is short for JavaScript Object Notation, and is a way to store information in an organized, easy-to-access manner. In a nutshell, it gives us a human-readable collection of data that we can access in a really logical manner.*
+
+*A common use of JSON is to read data from a web server, and display the data in a web page.*
+
 ## Software engineering
 
 ### Version control
 
 #### What type of branching strategy would you use?
+
+*I would ude Github Flow as follows:*
+
+- *Code in master is deployable at all times.*
+- *When you want to start working on a new task, create a new branch off of master and give it a descriptive name.*
+- *Commit to that branch locally and regularly send your work to the same-named branch on the server.*
+- *Open a pull request when you feel your changes are ready to be merged (or even if you aren’t so sure, but would like some feedback).*
+- *After the new feature is revised and approved, you can merge it into master.*
+- *Once your changes are merged and pushed to the master, you can and should deploy immediately.*
+
 #### What would you do if you find a bug on the production code (master branch)?
+
+* I would open a new branch, search and fix the bug, after merge it back to master.*
+
 #### How can you move changes from one branch to another in GIT?
+
+*Create a new branch pointing to the current commit using git branch branchname (or git checkout -b branchname)*
+the 
 #### How does a VCS help with code reviews?
+
+ - *Modern version control systems are designed to help address problems that teams face when collaborating.*
+
 #### What is your favorite git command? Why?
+
+*Git status, because I can see the current status and this is one of the simpliest git command.*
+
 #### What does remote/local mean in Git? 
+
+- *Remote:*
+
+  *A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting   service like GitHub or on an internal server. The repository is online.*
+  
+- *Local:*
+
+  *Git local repository is the one on which we will make local changes, typically this local repository is on our computer. In this case the repo is online.*
 
 ### DevOps
 
