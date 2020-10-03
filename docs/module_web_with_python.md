@@ -824,8 +824,44 @@ request (no memory about earlier requests).*
 ## Software Development Methodologies
 
 #### What kind of software development methodologies do you know? What are the main features of these?
+
+*Agile:*
+
+*Agile development methodology:*
+
+ - *Requirement/Features/User stories/Product Backlog*
+ - *Scrum Team(with lead)*
+ - *Sprint Planning(relative time)*
+ - *Sprints 1-4 Weeks Duration* 
+ - *Production deployment*
+ - *Done Checklist*
+
 #### What are the SCRUM roles?
+
+*Scrum has three roles: product owner, scrum master and the development team members.*
+
 #### What are the SCRUM ceremonies?
+
+- *Sprint Backlog Refinement*
+- *Sprint Planning Meeting.*
+- *Daily Stand-up Meeting.*
+- *Sprint Review Meeting.*
+- *Sprint Retrospective Meeting.*
+
 #### What are the SCRUM artifacts?
+
+*Scrum Artifacts provide key information that the Scrum Team and the stakeholders need to be aware of for understanding the product under development, the activities being planned, and the activities done in the project. *
+
 #### What is the main goal of a retrospective meeting?
+
+*A Retrospective is a ceremony held at the end of each iteration in an agile project. The general purpose is to allow the team, as a group, to evaluate its past working cycle. In addition, it's an important moment to gather feedback on what went well and what did not.*
+
 #### Explain, when would you recommend to use the waterfall methodology?
+
+*Use Waterfall when:*
+  - *The project is simple,*
+  - *The project is complicated, but you have the expertise to deliver it,*
+  - *It is all you know and you have no support for change,*
+  - *The upfront investment is not risky to make,*
+  - *You focus your performance measures on delivery date and budget.*
+  
