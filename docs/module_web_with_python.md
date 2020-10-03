@@ -662,9 +662,9 @@ btn.addEventListener('click',function(event) {
 
 *Those event listeners will be called in order, and this order is determined by the event bubbling/capturing model used.*
 
-*Bubbling means that the event propagates from the item that was clicked (the child) up to all its parent tree, starting from the nearest one.*
+*Bubbling means that the event propagates from the item that was clicked (the child) up to all its parent tree, starting from the nearest one.In this example, the handler on button will fire before the #container handler.*
 
-*In this example, the handler on button will fire before the #container handler.*
+*Capturing is the opposite: the outer event handlers are fired before the more specific handler, the one on button.*
 
 #### What is JSON and how do we use it?
 
