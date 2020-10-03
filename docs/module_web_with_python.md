@@ -658,7 +658,7 @@ btn.addEventListener('click',function(event) {
 
 *You want to track when users click on the button, and you have 2 event listeners, one on button, and one on #container.*
 
-*Click on a child element will always propagate to its parents, unless you stop the propagation (see later).*
+*Click on a child element will always propagate to its parents, unless you stop the propagation.*
 
 *Those event listeners will be called in order, and this order is determined by the event bubbling/capturing model used.*
 
