@@ -801,7 +801,13 @@ request (no memory about earlier requests).*
 | *Acknowledge sequencing* | *No acknowledgment* |
 
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
+
+*The format of an HTTP POST is to have the HTTP headers, followed by a blank line, followed by the request body. The POST variables are stored as key-value pairs in the body. You can see this using a tool like Fiddler, which you can use to watch the raw HTTP request and response payloads being sent across the wire.*
+
 #### How does an HTTP Response look like? What are the most relevant HTTP header fields?
+
+*After receiving and interpreting a request message, a server responds with an HTTP response message: A Status-line. Zero or more header (General|Response|Entity) fields followed by CRLF. An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields.*
+
 #### What is DNS? How does it work?
 
 *Domain Name Servers (DNS) are the Internet's equivalent of a phone book. They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses.*
