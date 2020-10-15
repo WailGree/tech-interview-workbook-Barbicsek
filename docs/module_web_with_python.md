@@ -345,6 +345,9 @@ def divide(a, b):
 ### SQL
 
 #### How can you connect your application to a database server? What are the possible ways?
+
+*I need a connection string and a connection object from the database provider to set a session with the database server. For phyton we can use the psycopg2 module api's to connect an application with psql database.*
+
 #### When do you use the DISTINCT keyword in SQL?
 
 *The SELECT DISTINCT statement is used to return only distinct (different) values.*
