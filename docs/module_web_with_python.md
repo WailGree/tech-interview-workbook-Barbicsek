@@ -304,7 +304,7 @@ buttonElement.addEventListener('click', function (event) {
 
 *In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called higher-order functions. Any function that is passed as an argument is called a callback function.*
 
-```
+```Javascript
 function doHomework(subject, callback) {
   alert(`Starting my ${subject} homework.`);
   callback();
@@ -319,7 +319,7 @@ doHomework('math', alertFinished);
 
 *A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.*
 
-```
+```Python
 def smart_divide(func):
     def inner(a, b):
         print("I am going to divide", a, "and", b)
@@ -382,35 +382,35 @@ def divide(a, b):
 *Here are the different types of the JOINs in SQL:*
 
 - *(INNER) JOIN: Returns records that have matching values in both tables*
-    ``` 
+    ```SQL
     SELECT Employee.EmpID, Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
     FROM Employee
     INNER JOIN Projects 
     ON Employee.EmpID=Projects.EmpID;
     ```  
 - *LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table*
-     ``` 
+     ```SQL
     SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
     FROM Employee
     LEFT JOIN
     ON Employee.EmpID = Projects.EmpID ;
-     ``` 
+     ```SQL
 - *RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table*
-    ``` 
+    ```SQL
     SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID, Projects.ProjectName
     FROM Employee
     RIGHT JOIN
     ON Employee.EmpID = Projects.EmpID;
     ``` 
 - *FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table*
-    ``` 
+    ```SQL
     SELECT Employee.EmpFname, Employee.EmpLname, Projects.ProjectID
     FROM Employee
     FULL JOIN Projects
     ON Employee.EmpID = Projects.EmpID;
     ``` 
     
-#### What are the constraints in sql?
+#### What are the constraints in SQL?
 
 *SQL constraints are used to specify rules for data in a table.Constraints can be specified when the table is created with the CREATE TABLE statement, or after the table is created with the ALTER TABLE statement.*
 
@@ -692,7 +692,7 @@ btn.addEventListener('click',function(event) {
 
 #### What would you do if you find a bug on the production code (master branch)?
 
-* I would open a new branch, search and fix the bug, after merge it back to master.*
+*I would report it to my project manager. And he/she would tell us how/who should fix it.<br>Alternatively, I would open a new branch, search and fix the bug, after merge it back to master.*
 
 #### How can you move changes from one branch to another in GIT?
 
@@ -720,7 +720,7 @@ the
 
 #### Why is it good to use a package manager software?
 
-*A package manager is a programming language’s tool to create project environments and easily import external dependencies.*
+*A package manager is tool to create project environments and easily import external dependencies.*
 
 #### Why is it good to use a virtual environment for a project?
 
